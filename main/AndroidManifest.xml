@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.endeavor.walter.getout9">
+    <!-- Required for foreground services on P+. -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- Required if your app targets Android 10 (API level 29) or higher -->
+    <!-- uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/ -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <!-- used for http request, uses Volley-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LocationsActivity"
+            android:label="@string/locations_name"
+            android:parentActivityName=".LocationsActivity">
+        </activity>
+
+        <activity android:name=".LocationsAddEditDelete"
+            android:label="LOCATIONS ADD EDIT"
+            android:parentActivityName=".LocationsActivity">
+        </activity>
+
+        <activity
+            android:name="com.endeavor.walter.getout9.NoteActivity"
+            android:label="NoteActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.endeavor.walter.getout9.NoteActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.endeavor.walter.getout9.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.endeavor.walter.getout9.NoteAddActivity"
+            android:label="NoteAddActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.endeavor.walter.getout9.NoteActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.endeavor.walter.getout9.NoteActivity" />
+        </activity>
+
+        <activity
+            android:name="com.endeavor.walter.getout9.AndroidCameraApi"
+            android:label="Take a picture"
+            >
+        </activity>
+
+        <activity
+            android:name="com.endeavor.walter.getout9.ViewImages"
+            android:label="pictures"
+            >
+        </activity>
+
+        <activity android:name="com.endeavor.walter.getout9.CustomCalendarActivity2"
+            android:label="Event in Note"
+            android:theme="@style/NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.endeavor.walter.getout9.EventAddActivity" />
+        </activity>
+
+        <activity android:name="com.endeavor.walter.getout9.DateTimePicker"
+            android:label="Select Time"
+            android:theme="@style/NoActionBar">
+        </activity>
+
+        <activity android:name="com.endeavor.walter.getout9.EventAddActivity"
+            android:label="Add Edit Event"
+            android:theme="@style/NoActionBar">
+        </activity>
+
+        <activity android:name="com.endeavor.walter.getout9.EventsActivity"
+            android:label="View Events"
+            android:theme="@style/NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.endeavor.walter.getout9.MainActivity" />
+        </activity>
+
+        <activity android:name=".About">
+        </activity>
+
+        <activity android:name=".ScratchPad">
+        </activity>
+        <!-- Foreground services in Q+ require type. -->
+        <!-- android:foregroundServiceType="location" -->
+
+        <service
+            android:name=".LocationUpdatesService"
+            android:enabled="true"
+            android:exported="true"
+            />
+        <!-- TRANSITION RECOGNITION - BROADCAST RECEIVER -->
+
+        <receiver android:name=".RecognitionReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.location.sample.locationupdatesforegroundservice.RecognitionReceiver.ACTION_PROCESS_TRANSITION_UPDATES" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.endeavor.walter.getout9.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+</manifest>

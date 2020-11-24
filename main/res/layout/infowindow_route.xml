@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgMapLegend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="map legend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/maplegend" />
+
+    <TextView
+        android:id="@+id/txtTitle_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Start: "
+        app:layout_constraintStart_toStartOf="@id/imgMapLegend"
+        app:layout_constraintTop_toBottomOf="@+id/txtDatetime_route" />
+
+    <TextView
+        android:id="@+id/txtDatetime_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="10-14-2020 1:06pm"
+        app:layout_constraintStart_toStartOf="@id/imgMapLegend"
+        app:layout_constraintTop_toBottomOf="@+id/imgMapLegend" />
+
+    <TextView
+        android:id="@+id/txtTotalTime_route"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="30:37 total time"
+        app:layout_constraintStart_toStartOf="@id/imgMapLegend"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle_route" />
+
+    <TextView
+        android:id="@+id/txtTotalDistance_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1.93 mi"
+        app:layout_constraintStart_toStartOf="@+id/imgMapLegend"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalTime_route" />
+
+    <TextView
+        android:id="@+id/txtSteps_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="2596 steps"
+        app:layout_constraintStart_toStartOf="@+id/imgMapLegend"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalDistance_route" />
+
+    <TextView
+        android:id="@+id/txtElevationDelta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="25 meters elevation diff"
+        app:layout_constraintStart_toStartOf="@+id/imgMapLegend"
+        app:layout_constraintTop_toBottomOf="@+id/txtSteps_route" />
+
+    <TextView
+        android:id="@+id/txtMoveMinutes_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="20 move minutes"
+        app:layout_constraintStart_toStartOf="@id/imgMapLegend"
+        app:layout_constraintTop_toBottomOf="@+id/txtElevationDelta" />
+
+    <TextView
+        android:id="@+id/txtHeartMinutes_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="19 heart minutes"
+        app:layout_constraintStart_toStartOf="@+id/imgMapLegend"
+        app:layout_constraintTop_toBottomOf="@+id/txtMoveMinutes_route" />
+
+
+    <TextView
+        android:id="@+id/txtHeartPts_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="24 heart pts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imgMapLegend"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeartMinutes_route" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

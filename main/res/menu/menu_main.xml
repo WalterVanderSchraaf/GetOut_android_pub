@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mi_main_Camera"
+        android:icon="@drawable/ic_action_camera"
+        android:title="Picture"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mi_main_Run"
+        android:icon="@android:drawable/btn_star_big_on"
+        android:title="Run"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mi_main_Pause"
+        android:icon="@android:drawable/ic_media_pause"
+        android:title="Pause"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mi_main_AddNote"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="AddNote"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mi_main_routes"
+        android:title="@string/menu_main_routes"
+        android:orderInCategory="90">
+        <menu>
+            <item
+                android:id="@+id/mi_main_RouteActivityOffset"
+                android:title="@string/menu_main_RouteActivityOffset" />
+            <item
+                android:id="@+id/mi_main_RouteActivityGeoFenceTimeOut"
+                android:title="@string/menu_main_RouteActivityGeoFenceTimeOut" />
+            <item
+                android:id="@+id/mi_main_clearmap"
+                android:title="@string/menu_main_clearmap" />
+            <item
+                android:id="@+id/mi_main_exportroutes"
+                android:title="@string/menu_main_exportroutes" />
+            <item
+                android:id="@+id/mi_main_connectroutes"
+                android:title="@string/menu_main_connectroutes" />
+            <item
+                android:id="@+id/mi_main_updatetblhealth"
+                android:title="@string/menu_updatetblhealth" />
+            <item
+                android:id="@+id/mi_main_sharehealth"
+                android:title="@string/menu_sharehealth" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/mi_main_notes"
+        android:title="@string/menu_main_notes"
+        android:orderInCategory="100">
+        <menu>
+            <item android:id="@+id/mi_main_import_note"
+                android:title="@string/menu_main_import_file"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/mi_main_Add_VocabList"
+                android:title="@string/menu_main_add_vocablist"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/mi_main_admin"
+        android:title="@string/menu_main_admin"
+        android:orderInCategory="105">
+        <menu>
+            <item
+                android:id="@+id/mi_main_Login"
+                android:orderInCategory="120"
+                android:title="@string/menu_main_login" />
+            <item
+                android:id="@+id/mi_main_RandomTask"
+                android:orderInCategory="110"
+                android:title="@string/menu_main_expdb" />
+            <item
+                android:id="@+id/mi_main_ImportDB"
+                android:orderInCategory="115"
+                android:title="@string/menu_main_impdb" />
+            <item
+                android:id="@+id/mi_main_cleartblLogin"
+                android:orderInCategory="125"
+                android:title="@string/menu_main_cleartblLogin" />
+            <item
+                android:id="@+id/miListSubscriptions"
+                android:title="Log Subscriptions" />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/mi_main_about"
+        android:title="@string/menu_main_about"
+        android:orderInCategory="130"/>
+
+</menu>

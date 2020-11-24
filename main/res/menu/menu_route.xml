@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/miEdit_route"
+        android:title="Rename Route" />
+    <item
+        android:id="@+id/mi_Screenshot_route"
+        android:title="Share Image"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/miGEOlocations"
+        android:title="Display GEO locations" />
+    <item
+        android:id="@+id/miDelete_route"
+        android:title="Delete Route" />
+
+    <item
+        android:id="@+id/miUpdateFit_route"
+        android:title="Update Fit info" >
+        <menu>
+            <item android:id="@+id/miUpdateFit_route_only"
+                android:title="Fit Route Info"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/miUpdate_ELEVATION_route"
+                android:title="Elevation difference"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/miUpdateTotalTime"
+        android:title="Update time due to pauses" />
+
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ConstraintLayout_activity_event_item_add">
+<!-- android.support.design.widget.AppBarLayout-->
+    <!--<com.google.android.material.appbar.AppBarLayout-->
+        <!--android:id="@+id/appbar"-->
+        <!--android:layout_height="192dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--app:layout_constraintTop_toBottomOf="parent">-->
+        <!--&lt;!&ndash;<android.support.v7.widget.Toolbar&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/toolbar_event"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="?android:attr/actionBarSize"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="?android:attr/colorPrimary"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:popupTheme="@style/AppTheme.PopupOverlay">&ndash;&gt;-->
+        <!--&lt;!&ndash;</android.support.v7.widget.Toolbar>&ndash;&gt;-->
+    <!--</com.google.android.material.appbar.AppBarLayout>-->
+
+    <include
+        android:id="@+id/includeevent"
+        layout="@layout/content_event_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".70"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEventSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="@string/btnSave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includeevent" />
+
+    <Button
+        android:id="@+id/btnEventDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:text="@string/btnDelete"
+        app:layout_constraintStart_toEndOf="@+id/btnEventSave"
+        app:layout_constraintTop_toBottomOf="@+id/includeevent" />
+    <Button
+        android:id="@+id/btnEventCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="@string/btnCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEventDelete"
+        app:layout_constraintTop_toBottomOf="@+id/includeevent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

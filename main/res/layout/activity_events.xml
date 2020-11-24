@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.design.widget.CoordinatorLayout-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventsActivity">
+
+<!--    <android.support.design.widget.AppBarLayout-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+            <TextView
+                android:id="@+id/edtEventSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:text="@string/txtEventSource" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--    <android.support.v4.widget.NestedScrollView-->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/event_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

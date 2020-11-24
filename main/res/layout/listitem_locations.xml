@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtLocationdId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="locationsid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPathname"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="pathname"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtLocationdId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLocationsNoteItem"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:clickable="true"
+        android:focusable="false"
+        app:layout_constraintStart_toEndOf="@id/txtPathname"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:text="user"
+        app:layout_constraintStart_toStartOf="@id/txtPathname"
+        app:layout_constraintTop_toBottomOf="@id/txtPathname" />
+
+    <TextView
+        android:id="@+id/txtDatetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="4dp"
+        android:text="datetime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtUser" />
+
+    <TextView
+        android:id="@+id/txtTotalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="16dp"
+        android:text="1:30:30"
+        app:layout_constraintEnd_toStartOf="@id/txtDatetime"
+        app:layout_constraintTop_toTopOf="@+id/txtUser" />
+
+    <TextView
+        android:id="@+id/txtDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:text="100.50"
+        app:layout_constraintEnd_toStartOf="@+id/lblDistance"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="steps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSteps_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:text="200"
+        app:layout_constraintEnd_toStartOf="@+id/lblSteps"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:text="mi "
+        app:layout_constraintEnd_toStartOf="@+id/lblSteps"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtReference"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="130dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtDatetime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMoveMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintStart_toStartOf="@+id/txtPathname"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalTime"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <TextView
+        android:id="@+id/lblMoveMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="move minutes"
+        app:layout_constraintStart_toEndOf="@+id/txtMoveMinutes"
+        app:layout_constraintTop_toTopOf="@+id/txtMoveMinutes"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <TextView
+        android:id="@+id/txtHeartPts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/lblHeartPts"
+        app:layout_constraintTop_toTopOf="@+id/txtMoveMinutes"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <TextView
+        android:id="@+id/lblHeartPts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="heart pts"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtHeartMinutes"
+        app:layout_constraintTop_toTopOf="@+id/txtMoveMinutes"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <TextView
+        android:id="@+id/txtHeartMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="21"
+        app:layout_constraintEnd_toStartOf="@+id/lblHeartMinutes"
+        app:layout_constraintTop_toTopOf="@+id/txtMoveMinutes" />
+
+    <TextView
+        android:id="@+id/lblHeartMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="heart minutes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtMoveMinutes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

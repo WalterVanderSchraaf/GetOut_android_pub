@@ -1,0 +1,111 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.endeavor.walter.getout9.MainActivity">
+    <item
+        android:id="@+id/miSaveNoteName"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="Compose"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mi_note_Add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Compose"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mi_note_Search"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:title= "@string/menu_note_search"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/mi_note_sumcosts"
+        android:icon="@drawable/ic_action_sumcost"
+        android:orderInCategory="90"
+        android:title="@string/menu_note_Sum_Costs"
+        app:showAsAction="always" />
+    <item android:title="@string/menu_note_ToggleTags_Hide"
+        android:id="@+id/mi_note_toggletags"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:title="@string/menu_note_ToggleChecks_Hide"
+        android:id="@+id/mi_note_togglechecks"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mi_note_save_note"
+        android:orderInCategory="105"
+        android:title="@string/menu_note_save_note"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mi_note_share_note"
+        android:orderInCategory="110"
+        android:title="@string/menu_note_share_note"
+        app:showAsAction="never" />
+    <item android:title="@string/menu_note_delete"
+        android:orderInCategory="120">
+        <menu>
+            <item
+                android:id="@+id/mi_delete_Notesid"
+                android:orderInCategory="121"
+                android:title="@string/menu_note_delete_notes"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/mi_delete_check_items"
+                android:orderInCategory="122"
+                android:title= "@string/menu_note_delete_check_items"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/mi_delete_all_items"
+                android:orderInCategory="123"
+                android:title= "@string/menu_note_delete_all_items"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/mi_delete_linenumber"
+                android:title="@string/menu_note_delete_linenumber"
+                android:orderInCategory="124"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/menu_note_sort"
+        android:orderInCategory="150">
+        <menu><group android:checkableBehavior="single"/>
+            <item
+                android:id="@+id/mi_note_sortby_notes"
+                android:orderInCategory="200"
+                android:title="@string/menu_note_sortby_name"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/mi_note_sortby_dates"
+                android:orderInCategory="300"
+                android:title="@string/menu_note_sortby_date"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/mi_note_sortby_check"
+                android:orderInCategory="400"
+                android:title="@string/menu_note_sortby_check"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/mi_note_sortby_tag"
+                android:orderInCategory="500"
+                android:title="@string/menu_note_sortby_tag"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+    <item android:title="Print"
+        android:orderInCategory="160">
+        <menu>
+            <item
+                android:id="@+id/mi_note_print_checked_items"
+                android:orderInCategory="161"
+                android:title="@string/menu_note_print_checked_items"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/mi_note_print_all_items"
+                android:orderInCategory="162"
+                android:title="@string/menu_note_print_all_items"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

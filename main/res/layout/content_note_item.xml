@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout_content_note_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollvNoteItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtcontentnote_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/txtcontentnote_lbl"
+                app:layout_constraintEnd_toStartOf="@+id/edtcontentnote_NoteName"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edtcontentnote_NoteName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toEndOf="@id/txtcontentnote_lbl" />
+
+            <TextView
+                android:id="@+id/txtcontentnote_lblTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:text="@string/txtcontentnote_lblTag"
+                app:layout_constraintEnd_toEndOf="@id/txtcontentnote_lbl"
+                app:layout_constraintTop_toBottomOf="@+id/edtcontentnote_NoteName" />
+
+            <EditText
+                android:id="@+id/edtcontentnote_Tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="@id/edtcontentnote_NoteName"
+                app:layout_constraintTop_toBottomOf="@+id/edtcontentnote_NoteName"
+                tools:layout_editor_absoluteY="46dp" />
+            <TextView
+                android:id="@+id/txtcontentnote_lblCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:text="@string/txtcontentnote_lblCost"
+                app:layout_constraintEnd_toEndOf="@id/txtcontentnote_lbl"
+                app:layout_constraintTop_toBottomOf="@+id/edtcontentnote_NoteName" />
+
+            <EditText
+                android:id="@+id/edtcontentnote_Cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                app:layout_constraintStart_toStartOf="@id/edtcontentnote_NoteName"
+                app:layout_constraintTop_toBottomOf="@+id/edtcontentnote_NoteName"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <TextView
+                android:id="@+id/txtEventAlarmlbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/txtEventAlarmlbl"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintEnd_toEndOf="@id/txtcontentnote_lbl"
+                app:layout_constraintTop_toBottomOf="@+id/edtcontentnote_Tag" />
+
+            <TextView
+                android:id="@+id/txtEventContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="contact info" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horscrollv"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollvNoteItem">
+
+        <LinearLayout
+            android:id="@+id/myGalleryNoteItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/txtcontentnote_NotesId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:text="NotesId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horscrollv" />
+
+    <TextView
+        android:id="@+id/txtcontentnote_NoteId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:text="NoteId"
+        app:layout_constraintStart_toEndOf="@+id/txtcontentnote_NotesId"
+        app:layout_constraintTop_toBottomOf="@+id/horscrollv" />
+    <TextView
+        android:id="@+id/txtcontentnote_EventId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:text="EventId"
+        app:layout_constraintStart_toEndOf="@+id/txtcontentnote_NoteId"
+        app:layout_constraintTop_toBottomOf="@+id/horscrollv" />
+
+    <TextView
+        android:id="@+id/txtImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/txtcontentnote_EventId"
+        app:layout_constraintTop_toBottomOf="@+id/horscrollv" />
+
+    <TextView
+        android:id="@+id/txtImageDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/txtImage"
+        app:layout_constraintTop_toBottomOf="@+id/txtImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

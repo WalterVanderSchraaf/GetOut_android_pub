@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_event_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ScrollView
+    android:id="@+id/content_event_item_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linlayout1">
+        <TextView
+            android:id="@+id/txtStatus_Calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/event_lbl"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/txtEventDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/EventId_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Message"/>
+
+        <EditText
+            android:id="@+id/edtEventMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtEventMessageTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/spnEventType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnEventOccurance">
+        </Spinner>
+        <LinearLayout
+            android:id="@+id/layout_Days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/spnEventOccurance"
+            app:layout_constraintStart_toStartOf="@id/btnSave_Calendar"
+            android:orientation="horizontal"
+            android:layout_gravity="center" >
+            <CheckBox
+                android:id="@+id/chkSun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:button = "@xml/custom_s_day_checkbox"/>
+            <CheckBox
+                android:id="@+id/chkMon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:button = "@xml/custom_m_day_checkbox"/>
+            <CheckBox
+                android:id="@+id/chkTue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:button = "@xml/custom_t_day_checkbox" />
+            <CheckBox
+                android:id="@+id/chkWed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:button = "@xml/custom_w_day_checkbox"/>
+            <CheckBox
+                android:id="@+id/chkThu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:button = "@xml/custom_t_day_checkbox" />
+            <CheckBox
+                android:id="@+id/chkFri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:button = "@xml/custom_f_day_checkbox" />
+            <CheckBox
+                android:id="@+id/chkSat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:button = "@xml/custom_s_day_checkbox" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/edtEventToContactlbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="address" />
+
+        <EditText
+            android:id="@+id/edtEventToContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textWebEmailAddress"
+            android:autofillHints="To Contact address or phone"/>
+
+        <TextView
+            android:id="@+id/txtEventDatelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/txtEventDatelbl"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/txtEventEventId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="eventid" />
+
+        <TextView
+            android:id="@+id/txtEventNoteId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="noteid" />
+    </LinearLayout>
+</ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

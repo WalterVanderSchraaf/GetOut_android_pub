@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Get Out</string>
+    <string name="locations_name">Route</string>
+    <string name="tab_text_1">TODAY</string>
+    <string name="tab_text_2">Journal</string>
+    <string name="tab_text_3">Images</string>
+    <string name="tab_text_4">Notes</string>
+    <string name="tab_text_5">Calendar</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">XXXXXXXXX</string>
+
+    <string name="launch_activity">Launch activity</string>
+    <string name="location_unknown">Location unknown</string>
+    <string name="location_updates_label">Location Updates</string>
+
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core functionality.</string>
+    <string name="settings">Settings</string>
+    <string name="ok">OK</string>
+    <string name="request_location_updates">Request location updates</string>
+    <string name="remove_location_updates">Remove location updates</string>
+
+    <string name="location_updated">Location Updated: %1$s</string>
+
+    <string name="Layers">Layers</string>
+    <string name="menu_settings">Settings</string>
+    <string name="activatelocationupdates">Request location updates</string>
+    <string name="deactivatelocationupdates">Remove location Updates</string>
+    <string name="getpreviousroute">get previous Routes</string>
+    <string name="menu_main_RouteActivityOffset">reset Route Activity offset</string>
+    <string name="menu_main_RouteActivityGeoFenceTimeOut">reset Geo Fence TimeOut</string>
+    <string name="RouteActivityOffset">Activity Offset %1$s</string>
+    <string name="RouteActivityGeoFenceTimeOut">GeoFence TimeOut %1$s</string>
+    <string name="action_delete_check_notes">Delete checked notes</string>
+    <string name="action_delete_check">Delete Checked</string>
+    <string name="menu_updatetblhealth">update tblhealth for %1$s</string>
+    <string name="menu_sharehealth">share health scripts for %1$s</string>
+
+    <string name="menu_zoom">zoom Settings</string>
+    <string name="zoom1">Zoom to 18</string>
+    <string name="zoom2">Zoom to 16</string>
+    <string name="zoom3">Zoom to 10</string>
+
+    <string name="menu_main_maptype_hybrid">maptype HYBRID</string>
+    <string name="menu_main_maptype_normal">maptype NORMAL</string>
+    <string name="menu_main_maptype_satellite">maptype SATELLITE</string>
+    <string name="menu_main_today">TODAY</string>
+    <string name="menu_main_maptype_terrain">maptype TERRAIN</string>
+    <string name="menu_main_routes">ROUTES</string>
+    <string name="menu_main_clearmap">clear MAP</string>
+    <string name="menu_main_connectroutes">connect maps together</string>
+
+    <string name="menu_main_exportroutes">export checked maps</string>
+    <string name="menu_main_expdb">export DB</string>
+    <string name="menu_main_cleartblLogin">clear tblLogin</string>
+    <string name="menu_main_impdb">reset DB</string>
+    <string name="menu_main_login">Login</string>
+    <string name="menu_note_search">search the list</string>
+    <string name="menu_note_save_note">Save to file</string>
+    <string name="menu_note_print_checked_items">Print checked notes</string>
+    <string name="menu_note_print_all_items">print all items</string>
+    <string name="menu_note_sortby_name">Sort by Name</string>
+    <string name="menu_note_sortby_date">Sort by Date</string>
+    <string name="menu_note_sortby_check">Sort by Checks</string>
+    <string name="menu_note_sortby_tag">Sort by Tag</string>
+    <string name="menu_note_delete_notes">Delete whole note</string>
+    <string name="menu_note_delete_check_items">Delete checked items</string>
+    <string name="menu_note_delete_all_items">Delete all items</string>
+    <string name="menu_note_delete_linenumber">Remove line numbers from note text</string>
+    <string name="menu_main_import_file">import note</string>
+    <string name="menu_main_add_vocablist">add vocabulary</string>
+    <string name="menu_note_share_note">Share note</string>
+    <string name="menu_note_ToggleTags_Hide">Hide tags</string>
+    <string name="menu_note_ToggleTags_Show">Show tags</string>
+    <string name="menu_note_Sum_Costs">Sum Costs</string>"
+    <string name="menu_note_ToggleChecks_Hide">Hide checks</string>
+    <string name="menu_note_ToggleChecks_Show">Show checks</string>
+
+    <string name="menu_main_notes">NOTES</string>
+    <string name="menu_main_admin">Admin</string>
+    <string name="menu_note_sort">Sort</string>
+    <string name="menu_note_delete">Delete</string>
+
+    <string name="bntAddPic">add pic</string>
+    <string name="current_date">June, 2016</string>
+    <string name="events_lbl">CALENDAR EVENTS</string>
+    <string name="event_lbl">CALENDAR EVENT</string>
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="last_date">30</string>
+    <string name="action_calendar">Calendar</string>
+    <string name="txtEventAlarm">Event</string>
+    <string name="txtEventAlarmlbl">Event Time - click to add/modify</string>
+    <string name="txtcontentnote_lblTag">Tag</string>
+    <string name="txtcontentnote_lblCost">Cost</string>
+    <string name="txtcontentnote_lbl">Note item:</string>
+    <string name="txtEventDatelbl">Event Time - click to add/modify</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="btnSave">Save</string>
+    <string name="btnDelete">Delete</string>
+    <string name="txtEventSource">Events from </string>
+
+
+    <string name="edtcontentnote_NoteName">enter note</string>
+    <string name="menu_main_about">About</string>
+
+
+
+</resources>
+
